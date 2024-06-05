@@ -1,0 +1,330 @@
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  :root{
+    --color_text-primary: #AB29CA;
+    --color_text-secondary: #101E2C;
+    --color_text-tertiary: #485663;
+    --main_color-primary: #9A00BF;
+    --main_color-secondary: #F4D4FB;
+    --background_color: #F4FBFE;
+    --low_text_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_card2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+  }
+
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+   text-decoration: none;
+   color: var(--color_text-secondary);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95); /* Añade un fondo para el menú */
+    top: 0; /* Asegúrate de que el header esté siempre en la parte superior */
+}
+
+.container-header{
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{  
+    height: 80px; /* Se ajusta para mantener el logo dentro del tamaño del header */
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que el menú utilice el espacio disponible */
+}
+
+.menu nav{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; /* Esto centrará los elementos del menú si hay espacio */
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu nav ul li a{
+    color: var(--color_text-secondary);
+    font-size: var(--low_text_font_size);
+    position: relative;
+}
+
+.menu nav ul li a:hover{
+    color: var(--color_text-primary);
+}
+
+.btn-quote{
+    padding: 8px 20px;
+    border: 2px solid var(--main_color-primary);
+    border-radius: 10px;
+    font-weight: 500;  
+    transition: all 300ms; 
+}
+
+.btn-quote:hover{
+    color: white;
+    background: var(--main_color-primary);
+}
+
+main {
+  padding-top: 70px; /* Añade un margen superior del tamaño del header */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* Asegura que no haya espacio adicional alrededor de la imagen */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="search"] {
+  padding: 8px;
+  margin-right: 8px;
+  border: 2px solid var(--main_color-primary);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-container button {
+  padding: 8px 20px;
+  background-color: var(--main_color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.search-container button:hover {
+  background-color: #a500ff;
+}
+
+/* Centrar el título Servicios */
+.titulo-servicios {
+  text-align: center;
+  margin-top: 30px; /* Añade un espacio antes del título de servicios */
+}
+
+.titulo-contacto {
+  text-align: center;
+  margin-top: 30px; /* Añade un espacio antes del título de servicios */
+}
+
+.contact-info, .business-hours, .job-info {
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+
+.contact-info h2.contact-phone, .job-info h2 {
+  font-size: 1.7em;
+  margin-top: 20px;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  height: 100%; /* Asegura que todas las tarjetas tengan el mismo tamaño */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  
+  padding-bottom: 20px; /* Espacio en la parte inferior de la tarjeta */
+}
+
+.card img {
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.card h5, .card h6, p {
+  color: #333;
+  margin-bottom: 10px; /* Espacio entre los elementos de texto */
+}
+
+.card h5 {
+  color: #0056b3; /* Color más fuerte para el título del servicio */
+  font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+.badge {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+  width: 40%; /* Ajusta el ancho del botón */
+  width: 80%; /* Ajusta el ancho del botón */
+    align-self: center; /* Centra el botón horizontalmente */
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.card-body {
+  flex: 1; /* Toma todo el espacio disponible */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos internamente en columna */
+  justify-content: space-between; /* Distribuye el espacio entre los contenidos y el botón */
+}
+
+footer {
+  background-color: #edebeb;
+  font-family: cursive;
+  font-size: 26px;
+}
+
+
